@@ -76,6 +76,35 @@ gap:15px;
 padding-bottom:40px;
 }
 
+.about-text{
+max-width:850px;
+margin:0 auto 40px auto;
+color:#ddd;
+font-size:17px;
+line-height:1.7;
+}
+
+.gov-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+padding-bottom:40px;
+}
+
+.gov-card{
+background:White;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.gov-card img{
+width:120px;
+height:100px;
+object-fit:contain;
+}
+
 .card{
 background:White;
 padding:25px;
@@ -115,6 +144,37 @@ text-align:center;
 padding:25px;
 margin-top:40px;
 }
+.company-card{
+background:White;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+text-align:center;
+text-decoration:none;
+display:block;
+transition:transform 0.15s ease;
+}
+
+.company-card:hover{
+transform:translateY(-4px);
+}
+
+.company-card img{
+width:100px;
+height:100px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.company-card h3{
+color:#00a6a6;
+margin-bottom:10px;
+}
+
+.company-card p{
+color:#333;
+font-size:15px;
+}
 
 </style>
 </head>
@@ -143,44 +203,62 @@ margin-top:40px;
 
 <div class="hero">
 
-<h1>About Us</h1>
-<p>Learn more about the companies behind our mission-driven,<br>
-accountable, and transparent government solutions.</p>
+<h1></h1>
+<p>Matari Solutions LLC delivers end-to-end government solutions contracting, spanning program and project management, strategic advisory, operations and support services, technology and innovation, and pricing solutions. Our team partners with agencies to plan, execute, and modernize mission-critical initiatives, ensuring every engagement is delivered with accountability, transparency, and a focus on measurable outcomes.<br></p>
+
+<p>With 15 years of combined experience across the federal and commercial space, Matari Solutions brings proven expertise in navigating complex regulatory environments, managing large-scale programs, and building compliant, competitive pricing strategies. That depth of experience allows us to adapt quickly to evolving agency needs while maintaining the reliability and performance excellence our government and commercial partners depend on<br>
+</p>
 
 </div>
 
 
 <section>
+<h2 class="section-title">Agencies Serverd</h2>
 
-<h2 class="section-title">Our Companies</h2>
+<div class="gov-grid">
+
+<div class="gov-card">
+<img src="irs-logo.png" alt="Internal Revenue Service">
+</div>
+
+<div class="gov-card">
+<img src="dot-logo.png" alt="Department of Transportation">
+</div>
+
+<div class="gov-card">
+<img src="dod-logo.png" alt="Department of Defense">
+</div>
+
+</div>
+<h2 class="section-title">Companies Worked With</h2>
 
 <div class="grid">
 
-<a href="#" class="card">
+<a href="#" class="company-card">
 <img src="insert logo here 1.png" alt="insert company name here">
 <h3>insert company name here</h3>
 <p>insert brief summary here</p>
 </a>
 
-<a href="#" class="card">
+<a href="#" class="company-card">
 <img src="insert logo here 2.png" alt="insert company name here">
 <h3>insert company name here</h3>
 <p>insert brief summary here</p>
 </a>
 
-<a href="#" class="card">
+<a href="#" class="company-card">
 <img src="insert logo here 3.png" alt="insert company name here">
 <h3>insert company name here</h3>
 <p>insert brief summary here</p>
 </a>
 
-<a href="#" class="card">
+<a href="#" class="company-card">
 <img src="insert logo here 4.png" alt="insert company name here">
 <h3>insert company name here</h3>
 <p>insert brief summary here</p>
 </a>
 
-<a href="#" class="card">
+<a href="#" class="company-card">
 <img src="insert logo here 5.png" alt="insert company name here">
 <h3>insert company name here</h3>
 <p>insert brief summary here</p>
@@ -189,6 +267,8 @@ accountable, and transparent government solutions.</p>
 </div>
 
 </section>
+
+
 
 
 <footer>
