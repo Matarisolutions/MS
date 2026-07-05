@@ -104,6 +104,12 @@ margin-bottom:0px;
 .card p{
 color:#333;
 font-size:15px;
+line-height:1.5;
+}
+
+@media (min-width: 769px){
+
+.card p{
 max-height:0;
 opacity:0;
 margin-top:0px;
@@ -111,14 +117,12 @@ overflow:hidden;
 transition:max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
 }
 
-.card p{
-line-height:1.5;
-}
-
 .card:hover p{
 max-height:220px;
 opacity:1;
 margin-top:12px;
+}
+
 }
 
 .company-card{
@@ -201,19 +205,12 @@ padding:0px 20px;
 font-size:22px;
 }
 
-.grid, .gov-grid{
+.grid{
 grid-template-columns:1fr;
 }
 
-form input, form textarea{
-width:100%;
 }
 
-.contact-wrap{
-padding:0 5px;
-}
-
-}
 </style>
 </head>
 
@@ -227,7 +224,7 @@ padding:0 5px;
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
-<a href="Contact.html">Contact</a>
+<a href="#">Contact</a>
 </nav>
 
 </header>
