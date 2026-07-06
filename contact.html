@@ -206,20 +206,14 @@ Send us a message and we'll get back to you.</p>
 
 <section>
 
+
 <h2 class="section-title">Get In Touch</h2>
 
 <div class="contact-wrap">
 
-<form action="https://formsubmit.co/mohamed.matari@matarisolutions.com" method="POST">
+<form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
 
-<!-- Redirect after a successful submission -->
-<input type="hidden" name="_next" value="thankyou.html">
-
-<!-- Turns off FormSubmit's captcha page -->
-<input type="hidden" name="_captcha" value="false">
-
-<!-- Sets the subject line of the email you receive -->
-<input type="hidden" name="_subject" value="New Contact Form Submission - Matari Solutions">
+<input type="hidden" name="form-name" value="contact">
 
 <input type="text" name="Full Name" placeholder="Full Name" required>
 
@@ -233,9 +227,12 @@ Send us a message and we'll get back to you.</p>
 
 </form>
 
+<p class="confirm-note">Submissions are handled directly by Netlify. To receive them by email, go to your Netlify site dashboard → Site configuration → Forms → Form notifications, and add an email notification to mohamed.matari@matarisolutions.com.</p>
+
 </div>
 
 </section>
+
 
 
 <footer>
