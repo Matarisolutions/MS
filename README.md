@@ -6,8 +6,8 @@ contracting firm serving federal, state, and local agencies.
 The site is a **static, multi-page website** built from Markdown content and a
 shared HTML layout using **[Gulp](https://gulpjs.com/)** and
 **[gulp-layout](https://github.com/macoshita/gulp-layout)**. The visual design
-is based on the _Secur_ (Cyber Security Services Agency) HTML template
-(Bootstrap 5 + Font Awesome 6 Pro), rebranded for Matari Solutions.
+is built on a Bootstrap 5 + Font Awesome 6 front-end, branded for Matari
+Solutions.
 
 ---
 
@@ -43,7 +43,7 @@ shared across pages — `<head>`, header/nav, mobile menu, footer, and script
 tags. The page body is injected where the template has `<%- contents %>`, and
 front-matter values are available as locals (`<%= title %>`, `<%= description %>`).
 
-> **Why Markdown + raw HTML?** The Secur components (hero, service cards,
+> **Why Markdown + raw HTML?** The UI components (hero, service cards,
 > counters, forms) are rich HTML, so the page bodies are mostly HTML — which
 > Markdown passes through untouched. Simple prose can still be written in plain
 > Markdown. Keep each top-level HTML block free of blank lines internally
@@ -173,6 +173,5 @@ Pages, S3, etc.). Build with `npm run build` and serve the `dist/` directory.
 
 ## Credits
 
-- Design template: **Secur — Cyber Security Services Agency** (ThemeForest),
-  licensed to Matari Solutions LLC. Bootstrap 5, Swiper, Font Awesome 6 Pro.
 - Content and branding: **Matari Solutions LLC**.
+- Built with Bootstrap 5, Swiper, and Font Awesome 6.
