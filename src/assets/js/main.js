@@ -13,8 +13,6 @@
     07. Global Slider
     08. Ajax Contact Form
     09. Popup Sidemenu
-    10. Magnific Popup
-    11. Filter
     12. Counter Up
     13. Shape Mockup
     14. Progress Bar Animation
@@ -504,85 +502,6 @@
     popupSideMenu(".sidemenu-cart",".sideMenuCart",".sideMenuCls","show");
     popupSideMenu( ".popup-search-box", ".searchBoxToggler", ".searchClose", "show" );
 
-    /*----------- 10. Magnific Popup ----------*/
-    /* magnificPopup img view */
-    $(".popup-image").magnificPopup({
-        type: "image",
-        mainClass: 'mfp-zoom-in', 
-        removalDelay: 260,
-        gallery: {
-            enabled: true,
-        },
-    });
-
-    /* magnificPopup video view */
-    $(".popup-video").magnificPopup({
-        type: "iframe",
-        mainClass: 'mfp-zoom-in', 
-        removalDelay: 260,
-    });
-
-    /* magnificPopup video view */
-    $(".popup-content").magnificPopup({
-        type: "inline",
-        midClick: true,
-        mainClass: 'mfp-zoom-in', 
-        removalDelay: 260,
-    });
-
-    /*----------- 11. Filter ----------*/
-    $(".filter-active").imagesLoaded(function () {
-        var $filter = ".filter-active",
-            $filterItem = ".filter-item",
-            $filterMenu = ".filter-menu-active";
-
-        if ($($filter).length > 0) {
-            var $grid = $($filter).isotope({
-                itemSelector: $filterItem,
-                filter: "*",
-                masonry: {
-                    columnWidth: 1,
-                },
-            });
-
-            // filter items on button click
-            $($filterMenu).on("click", "button", function () {
-                var filterValue = $(this).attr("data-filter");
-                $grid.isotope({
-                    filter: filterValue,
-                });
-            });
-
-            // Menu Active Class
-            $($filterMenu).on("click", "button", function (event) {
-                event.preventDefault();
-                $(this).addClass("active");
-                $(this).siblings(".active").removeClass("active");
-            });
-        }
-    });
-
-    $(".masonary-active, .woocommerce-Reviews .comment-list").imagesLoaded(function () {
-        var $filter = ".masonary-active, .woocommerce-Reviews .comment-list",
-            $filterItem = ".filter-item, .woocommerce-Reviews .comment-list li";
-
-        if ($($filter).length > 0) {
-            $($filter).isotope({
-                itemSelector: $filterItem,
-                filter: "*",
-                masonry: {
-                    // use outer width of grid-sizer for columnWidth
-                    columnWidth: 1,
-                },
-            });
-        }
-        $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-            $($filter).isotope({
-                filter: "*",
-            });
-        });
-    });
-
     /*----------- 12. Counter Up ----------*/
     $(".counter-number").counterUp({
         delay: 10,
@@ -723,12 +642,6 @@
         });
     };
 
-    var postionHandler = "[data-sec-pos]";
-    if ($(postionHandler).length) {
-        $(postionHandler).imagesLoaded(function () {
-            $(postionHandler).sectionPosition("data-sec-pos", "data-pos-for");
-        });
-    }
 
     /************lettering js***********/
     function injector(t, splitter, klass, after) {

@@ -15,7 +15,6 @@ const path = require('path');
 const CSS_BUNDLE = [
   'src/assets/css/bootstrap.min.css',
   'src/assets/css/fontawesome.min.css',
-  'src/assets/css/magnific-popup.min.css',
   'src/assets/css/swiper-bundle.min.css',
   'src/assets/css/style.css',
   'src/assets/css/custom.css',
@@ -27,10 +26,7 @@ const JS_BUNDLE = [
   'src/assets/js/swiper-bundle.min.js',
   'src/assets/js/bootstrap.min.js',
   'src/assets/js/scrollCue.min.js',
-  'src/assets/js/jquery.magnific-popup.min.js',
   'src/assets/js/jquery.counterup.min.js',
-  'src/assets/js/imagesloaded.pkgd.min.js',
-  'src/assets/js/isotope.pkgd.min.js',
   'src/assets/js/main.js',
 ];
 
