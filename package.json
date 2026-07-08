@@ -1,0 +1,39 @@
+{
+  "name": "matari-solutions-website",
+  "version": "1.0.0",
+  "description": "Static marketing site for Matari Solutions LLC, built with Gulp + gulp-layout (front-matter + markdown).",
+  "private": true,
+  "scripts": {
+    "start": "gulp serve",
+    "dev": "gulp serve",
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "optimize": "node scripts/optimize-images.js",
+    "make-logo": "node scripts/make-footer-logo.js",
+    "format": "prettier --write \"gulpfile.js\" \"eslint.config.js\" \"scripts/**/*.js\" \"src/assets/css/custom.css\" \"*.{json,md}\" \".github/**/*.yml\"",
+    "format:check": "prettier --check \"gulpfile.js\" \"eslint.config.js\" \"scripts/**/*.js\" \"src/assets/css/custom.css\" \"*.{json,md}\" \".github/**/*.yml\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Matari Solutions LLC",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "browser-sync": "^3.0.3",
+    "ejs": "^3.1.10",
+    "eslint": "^9.39.4",
+    "globals": "^15.15.0",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-front-matter": "^1.3.0",
+    "gulp-layout": "^0.0.4",
+    "gulp-markdown": "^1.2.0",
+    "gulp-terser": "^2.1.0",
+    "prettier": "^3.9.4",
+    "sharp": "^0.35.3"
+  }
+}

@@ -1,0 +1,17 @@
+# Generated output
+dist/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Vendor theme assets (do not reformat)
+src/assets/
+
+# Content pages & templates: Prettier's markdown/HTML reflow would break the
+# markdown -> HTML passthrough and EJS templating, so leave them untouched.
+src/pages/
+src/layouts/
+
+# Legacy hand-coded site
+_legacy/

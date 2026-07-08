@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Matari Solutions — custom overrides (loaded after the theme's style.css)
+   Keep all site-specific tweaks here so the vendor style.css stays untouched.
+   ========================================================================== */
+
+/* --- Brand colors ------------------------------------------------------- */
+/* Recolor the theme's gradient + accents to the Matari palette. These two
+   variables drive every gradient (buttons, cards, borders) and accent in the
+   theme. --theme-color is the bright accent (must stay legible on dark), and
+   --theme-color2 is the darker gradient partner: gradients run navy -> teal. */
+:root {
+  --theme-color: #3fded9;
+  --theme-color2: #173460;
+}
+
+/* --- Logo sizing -------------------------------------------------------- */
+/* The Matari wordmark is a wide raster logo; constrain by height so it sits
+   neatly in the header, footer, side panel and mobile menu. */
+.ot-header .header-logo img {
+  max-height: 44px;
+  width: auto;
+}
+
+.ot-widget-about .about-logo img {
+  max-height: 48px;
+  width: auto;
+}
+
+/* Footer logo: the all-white variant, displayed 20% smaller than the header. */
+.footer-wrapper .about-logo img {
+  max-height: 35px;
+  width: auto;
+}
+
+.mobile-logo img {
+  max-height: 44px;
+  width: auto;
+}
+
+/* --- Agency seals ("Agencies We Serve" slider) -------------------------- */
+/* Every agency logo occupies an identical square (1:1) cell, centered, and is
+   scaled to fit within it (aspect ratio preserved, no distortion). This keeps
+   the wide wordmark (IRS) and the square seals on a uniform footprint. */
+.brand-card {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.brand-card img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* --- "Why Choose Us" image ---------------------------------------------- */
+/* This image sits in a content-sized (col-lg-auto) column with no width cap,
+   so a large source image blows the layout out. Constrain it to the design
+   footprint; it stays responsive on small screens. */
+.why-img-box2 img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
