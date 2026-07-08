@@ -6,16 +6,55 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><%= title %></title>
     <meta name="author" content="Matari Solutions LLC">
-    <meta name="description" content="<%= typeof description !== 'undefined' ? description : 'Matari Solutions LLC — mission-driven government contracting solutions for federal, state and local agencies.' %>">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <%
+      // --- SEO base config — update SITE_URL to the production domain ---
+      var SITE_URL = 'https://www.matarisolutions.com';
+      var desc =
+        typeof description !== 'undefined'
+          ? description
+          : 'Matari Solutions LLC — mission-driven government contracting solutions for federal, state and local agencies.';
+      var pagePath = typeof page !== 'undefined' ? page : 'index.html';
+      var canonical = SITE_URL + '/' + (pagePath === 'index.html' ? '' : pagePath);
+      var ogImage = SITE_URL + '/assets/img/normal/about2-1.png';
+      var indexable = !(typeof noindex !== 'undefined' && noindex);
+    %>
+    <meta name="description" content="<%= desc %>">
+    <meta name="robots" content="<%= indexable ? 'index, follow' : 'noindex, follow' %>">
+    <link rel="canonical" href="<%= canonical %>">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Matari Solutions LLC">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= desc %>">
+    <meta property="og:url" content="<%= canonical %>">
+    <meta property="og:image" content="<%= ogImage %>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= desc %>">
+    <meta name="twitter:image" content="<%= ogImage %>">
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#173460">
+
+    <!-- Organization structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Matari Solutions LLC",
+        "url": "<%= SITE_URL %>",
+        "logo": "<%= SITE_URL %>/assets/img/logo-matari.png",
+        "description": "<%= desc %>",
+        "email": "info@matarisolutions.com",
+        "sameAs": ["https://www.linkedin.com/"]
+      }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

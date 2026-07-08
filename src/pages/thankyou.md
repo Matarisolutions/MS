@@ -2,6 +2,7 @@
 layout: default.ejs
 title: Thank You — Matari Solutions LLC
 description: Your message has been received. A member of the Matari Solutions team will get back to you shortly.
+noindex: true
 ---
 
 <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcrumb-bg.png" data-overlay="smoke" data-opacity="7">

@@ -9,6 +9,7 @@ const cleanCSS = require('gulp-clean-css');
 const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 const fs = require('fs');
+const path = require('path');
 
 // CSS bundle order: vendor first, theme, then our overrides last so they win.
 const CSS_BUNDLE = [
@@ -41,7 +42,8 @@ const paths = {
   assets: ['src/assets/**/*', '!src/assets/**/*.css', '!src/assets/**/*.map', '!src/assets/js/**'],
   // Loaded inline on the home page for the hero wave effect, so it stays unbundled.
   wave: 'src/assets/js/wave.js',
-  static: 'src/*.php',
+  // Root static files served as-is: robots.txt, sitemap.xml.
+  static: 'src/*.{xml,txt}',
   dist: 'dist',
 };
 
@@ -59,6 +61,8 @@ function html() {
       layout((file) => ({
         ...file.frontMatter,
         layout: `src/layouts/${file.frontMatter.layout}`,
+        // Output path (e.g. "about.html") so the layout can build canonical/OG URLs.
+        page: file.relative.split(path.sep).join('/'),
       }))
     )
     .pipe(dest(paths.dist))
