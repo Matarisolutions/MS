@@ -24,7 +24,6 @@ description: Learn about Matari Solutions LLC — proven government contracting 
                 <div class="img-box1" data-cue="slideInLeft">
                     <div class="img-box1-shape1"></div>
                     <div class="img1" data-mask-src="assets/img/normal/about-mask1-1.png"><img src="assets/img/normal/about1-1.png" alt="About Matari Solutions"></div>
-                    <div class="about-experience-wrap jump"><div class="about-counter-wrap"><span class="counter-number">15</span>+</div>Years Combined Experience</div>
                 </div>
             </div>
             <div class="col-xl-6">

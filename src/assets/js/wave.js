@@ -247,7 +247,7 @@ const depth=400
 const height=3
 const distance=5
 for(let x=0;x<width;x+=distance){for(let z=0;z<depth;z+=distance){position.push(-width/2+x,-30,-depth/2+z)
-color.push(0,1-(x/width)*1,0.5+x/width*0.5,z/depth)}}
+color.push(0.247-0.157*(x/width),0.871-0.667*(x/width),0.851-0.475*(x/width),z/depth)}}
 this.uniforms.field=[width,height,depth]
 this.buffers.position=position
 this.buffers.color=color

@@ -13,6 +13,14 @@
   --theme-color2: #173460;
 }
 
+/* --- Home hero ---------------------------------------------------------- */
+/* Retune the hero-2 background to the brand palette: dark teal -> deep navy,
+   echoing the button gradient (#3fded9 teal / #173460 navy). */
+.ot-hero-wrapper.hero-2 {
+  background: -webkit-linear-gradient(262.48deg, #0f4c50 -0.43%, #0c1f3e 52.34%);
+  background: linear-gradient(187.52deg, #0f4c50 -0.43%, #0c1f3e 52.34%);
+}
+
 /* --- Logo sizing -------------------------------------------------------- */
 /* The Matari wordmark is a wide raster logo; constrain by height so it sits
    neatly in the header, footer, side panel and mobile menu. */
@@ -55,14 +63,4 @@
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
-}
-
-/* --- "Why Choose Us" image ---------------------------------------------- */
-/* This image sits in a content-sized (col-lg-auto) column with no width cap,
-   so a large source image blows the layout out. Constrain it to the design
-   footprint; it stays responsive on small screens. */
-.why-img-box2 img {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
 }

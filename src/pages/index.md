@@ -72,10 +72,6 @@ description: Matari Solutions LLC delivers accountable, transparent, and innovat
             <div class="col-xl-6">
                 <div class="img-box2" data-cue="slideInLeft">
                     <div class="img1"><div class="img-box2-shape1"></div><img src="assets/img/normal/about2-1.png" alt="About Matari Solutions"></div>
-                    <div class="about-experience-wrap jump">
-                        <div class="box-icon"><img src="assets/img/icon/about-icon2-1.svg" alt="icon"></div>
-                        <div class="about-counter-wrap">15+ Years Combined Experience</div>
-                    </div>
                 </div>
             </div>
             <div class="col-xl-6">
@@ -204,16 +200,17 @@ description: Matari Solutions LLC delivers accountable, transparent, and innovat
             <span class="sub-title" data-cue="slideInUp">Why Choose Us</span>
             <h2 class="sec-title" data-cue="slideInUp" data-delay="100">Why Agencies Partner With Matari</h2>
         </div>
-        <div class="row gy-30 justify-content-between align-items-center">
-            <div class="col-lg-auto text-center order-lg-2">
-                <div class="why-img-box2" data-cue="slideInUp"><img src="assets/img/normal/why2-1.png" alt="img"></div>
-            </div>
-            <div class="col-lg-auto col-sm-6 order-lg-1">
+        <div class="row gy-4 justify-content-center">
+            <div class="col-xl-3 col-md-6">
                 <div class="counter-card style2" data-cue="slideInUp"><div class="media-body"><h2 class="box-number"><span class="counter-number">15</span>+</h2><span class="box-text" data-theme-color="#069845">Years Combined Experience</span></div></div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="counter-card style2" data-cue="slideInUp"><div class="media-body"><h2 class="box-number"><span class="counter-number">5</span></h2><span class="box-text" data-theme-color="#F0A230">Federal Agencies Served</span></div></div>
+            </div>
+            <div class="col-xl-3 col-md-6">
                 <div class="counter-card style2" data-cue="slideInUp"><div class="media-body"><h2 class="box-number"><span class="counter-number">4</span></h2><span class="box-text" data-theme-color="#E0009B">Prime Partners</span></div></div>
             </div>
-            <div class="col-lg-auto col-sm-6 order-lg-3">
-                <div class="counter-card style2" data-cue="slideInUp"><div class="media-body"><h2 class="box-number"><span class="counter-number">5</span></h2><span class="box-text" data-theme-color="#F0A230">Federal Agencies Served</span></div></div>
+            <div class="col-xl-3 col-md-6">
                 <div class="counter-card style2" data-cue="slideInUp"><div class="media-body"><h2 class="box-number"><span class="counter-number">100</span>%</h2><span class="box-text" data-theme-color="#8F54FF">Compliance-First Delivery</span></div></div>
             </div>
         </div>
